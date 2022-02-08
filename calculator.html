@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>calculatior</title>
+        <script>
+            function sum()
+            {
+                a=parseInt(f1.t1.value);
+                b=parseInt(f1.t2.value);
+                f1.r.value=a+b;
+            }
+            function sub()
+            {
+                a=parseInt(f1.t1.value);
+                b=parseInt(f1.t2.value);
+                f1.r.value=a-b;
+            }
+            function mul()
+            {
+                a=parseInt(f1.t1.value);
+                b=parseInt(f1.t2.value);
+                f1.r.value=a*b;
+            }
+            function div()
+            {
+                a=parseInt(f1.t1.value);
+                b=parseInt(f1.t2.value);
+                f1.r.value=a/b;
+            }
+            function mod()
+            {
+                a=parseInt(f1.t1.value);
+                b=parseInt(f1.t2.value);
+                f1.r.value=a%b;
+            }
+            function clr()
+            {
+                a=parseInt(f1.t1.value);
+                b=parseInt(f1.t2.value);
+                f1.t1.value=null;
+                f1.t2.value=null;
+                f1.r.value=null;
+            }
+            </script>
+            <style>
+            input[type=text]
+            {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 20px 0;
+                margin-left: 25%;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=button] 
+            {
+               width: 15%;
+               background-color: #1d292c;
+               color: white;
+               padding: 24px 20px;
+               margin: 10px 2;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+               float:left;
+            }
+                div {
+                      border-radius: 5px;
+                      background-color: #011d22;
+                      margin-left: 450;
+                      margin-left:35%;margin-top:10%;
+                      width: 25%;
+                      height: 50%;
+                      padding: 30px;
+                }
+             </style>
+    </head>
+    <body>
+        <div class=">
+            <h2 align="center"> <font color="white"><i><b>Calculator</font></i></b></h2>
+    <form name="f1">
+    <input type="text" name="t1" placeholder="Enter 1st Number"><br>
+    <input type="text" name="t2" placeholder="Enter 2nd Number"><br>
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="mul()">
+    <input type="button" value="/" onclick="div()">
+    <input type="button" value="%" onclick="mod()">
+    <input type="button" value="clr" onclick="clr()"><br>
+    <input type="text" name="r" placeholder="Result"> 
+    </div>
+      </form>
+      </form>
+      </body>   
+
+
+</html>
